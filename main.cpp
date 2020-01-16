@@ -17,14 +17,12 @@ using namespace std;
 vector <string> gen;
 
 int findelem(string key, vector <string> v){
-
     vector<string>::iterator itr = find(v.begin(), v.end(), key);
-
-	if (itr != v.cend()) {
-		return distance(v.begin(), itr);
+    if (itr != v.cend()) {
+	return distance(v.begin(), itr);
     }
-	else {
-		return -1;
+    else {
+	return -1;
     }
 }
 
